@@ -17,7 +17,13 @@ enable :sessions
     @name1 = session[:name1]
     @name2 = session[:name2]
     @player1_hitpoints = "60"
-    @player2_hitpoints = "60"    
+    @player2_hitpoints = "60"
     erb(:play)
   end
+
+  get '/attack' do
+    erb(:attack)
+  end
+
+
 end
