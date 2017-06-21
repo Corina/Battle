@@ -7,6 +7,7 @@ feature 'Name form' do
     fill_in('name1', with:'Tom')
     fill_in('name2', with:'Jerry')
     click_button('Submit names')
+    visit('/play')
     expect(page).to have_content('Tom')
     expect(page).to have_content('Jerry')
   end
